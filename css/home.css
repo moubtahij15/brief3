@@ -343,6 +343,8 @@ justify-content: space-around;
 font-weight: 300;
 font-size: 13px;
 line-height: 19px;
+border-right:3px solid  #064635;
+
          }
          .feaatFot1{
              display: flex;
@@ -370,6 +372,11 @@ font-weight: 300;
 font-size: 13px;
 line-height: 54px;
 
+         }
+         #feaatFot0{
+
+            border-right: none;
+    
          }
          /*End footer  */
 
