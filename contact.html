@@ -7,6 +7,7 @@
   
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="css/contact.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -39,10 +40,10 @@
 
 
            
-         <div class="feat1">
+         <div class="feat1" id="testt">
             <img src="images/position 1.png" alt="">
             <div class="feat11">
-                <h6>adress</h6>
+                <h6 >adress</h6>
                 <p>1110 , quartier zeraktouni, Berrchid</p>
             </div>
             </div>  
@@ -78,11 +79,11 @@
             <div class="input1">
                 <div class="input11">
                         <label for="FName">First Name* </label>
-                        <input type="text">
+                        <input type="text" id="fNameI" required>
                 </div>
                 <div class="input11">
                     <label for="FName">Last Name* </label>
-                    <input type="text">
+                    <input type="text" id="lNameI" required>
             </div>
 
             </div>
@@ -90,11 +91,11 @@
 
             <div class="input11">
                 <label for="FName">Email*</label>
-                <input type="text">
+                <input type="text" id="emailI" required>
         </div>
         <div class="input11">
             <label for="FName">Phone</label>
-            <input type="text">
+            <input type="text" id="phoneI" required>
             
 
 </div>
@@ -104,8 +105,8 @@
       
         <div class="input11">
         <label for="message"> message</label>
-            <input type="text" name="" id="messageInp">
-            <button >Submit </button>
+            <input type="text" name="" id="messageInp" required>
+            <button   onclick="contactCheck()">Submit </button>
             <div class="input11">
          </div>
 
@@ -127,6 +128,38 @@
 
 
   </section>
+
+  <div id="showInfo">
+    <div class="infoC">
+
+        <label for="nom "> nom :  </label>
+    <p  id="lnom"> </p> 
+    </div>
+    
+
+    <div class="infoC">
+    <label for="prenom ">prenom :  </label>
+    <p id="lprenom"> </p> 
+    </div>
+    <div class="infoC">
+    <label for="email">email :  </label>
+    <p  id="lemail">     </p> 
+
+    </div>
+    <div class="infoC">
+    <label for="phone ">phone :  </label>
+    <p id="lphone">   </p> 
+        </div> 
+
+    <div class="infoC">
+    <label for="message ">message :  </label>
+    <p id="lmessage"> </p>
+
+    </div> 
+
+
+  </div> 
+
   <footer>
     <div class="featFot">
         <h2> Rent<span style="color:green">Me</span>Now</h2>
@@ -163,5 +196,7 @@
     </div>
 
 </footer>
+<script src="js/script.js"></script> 
+
 </body>
 </html>

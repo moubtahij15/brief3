@@ -104,7 +104,7 @@ line-height: 31px;
     /*start section 2 */
     .container2{
 
- margin-top: 153px;
+         margin-top: 153px;
         margin-left: 119px;
         margin-right: 138px;
 
@@ -379,4 +379,66 @@ line-height: 54px;
     
          }
          /*End footer  */
+         @media screen and (max-width: 600px) {
+            .container1{
+                flex-direction: column-reverse;
+                        justify-content: center;
+            }
+            .text h2{
+   
+               
+            text-align: center;
+            
+             }
+            
+             .text p{
+            
+                text-align: center;
 
+             }
+             .container2{
+                    text-align: center;
+                width: 100%;
+             }
+             .container2 h2 {
+
+                text-align: center;
+                width: 100%;
+    
+               
+            }
+
+            .featrs{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+            }
+            .first{
+                    margin-top: 20px;
+
+
+              }
+              .container3  {
+margin: auto;}
+         
+
+#halfCar{
+                display: none;
+            }
+
+            featrs1{
+
+                margin-left: 0px;
+
+            }
+            featrs1 h2{
+                
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 45px;
+        
+        
+            }
+        
+          }

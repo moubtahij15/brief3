@@ -39,11 +39,11 @@
 
 
         <h2>Type de 
-            <span style="font-weight: bold;">  véhicule </span> </h2>
+                    <span style="font-weight: bold;">  véhicule </span> </h2>
        
         <div class="cars">
 
-            <div class="car">
+            <div class="car" id="moto" onclick="cc(id)">
                <img src="images/moto/MotorbikeTrip_rental_moto_vignette_BMW-C650-Sport_topcase_740x.jpg" alt="#">
                <div class="carInfo">
                 <h6> Moto</h6>
@@ -51,41 +51,41 @@
                     </div>
              </div>
             
-             <div class="car">
+             <div class="car" id="compact" onclick="cc(id)">
                 <img src="images/cars/Ford fiesta.png" alt="#">
                 <div class="carInfo">
                  <h6> Compact</h6>
                      </div>
               </div>      
 
-              <div class="car">
+              <div class="car" id="citadine" onclick="cc(id)">
                 <img src="images/cars/Clio 5.png" alt="#">
                 <div class="carInfo">
                  <h6> citadin</h6>
                      </div>
               </div>
-              <div class="car">
+              <div class="car" id="utilitaire" onclick="cc(id)">
                 <img src="images/trucks/chubarov160200005.jpg" alt="#">
                 <div class="carInfo">
                  <h6> utilitaire</h6>
  
                      </div>
               </div>
-              <div class="car">
+              <div class="car " id="berline" onclick="cc(id)">
                 <img src="images/cars/Mercedes-Benz C-Class .png" alt="#">
                 <div class="carInfo">
                  <h6> sedan/berlin</h6>
  
                      </div>
               </div>
-              <div class="car">
+              <div class="car" id="camion" onclick="cc(id)"> 
                 <img src="images/trucks/mechanik170300010.jpg" alt="#">
                 <div class="carInfo">
                  <h6> camion</h6>
  
                      </div>
               </div>
-              <div class="car">
+              <div class="car" id="enginDeChantier" onclick="cc(id)">
                 <img src="images/construction machins/mar1ar1200100124.jpg" alt="#">
                 <div class="carInfo">
                  <h6> engin de chantier</h6>
@@ -98,50 +98,50 @@
        
     </section>
 
-    <section class="fuelOption">
+    <section class="fuelOption" id="fuelOption">
 
             <h2>Select Your Fuel Type
             </h2>
             <div class="optionsFF">
-        <div class="optionsF">
-            <input type="radio" id="essence"  value="essence"
+        <div class="optionsF" >
+            <input type="radio" id="essence"  value="essence" name="fuel" onclick="boiteShowing()"
                    >
-            <label for="essence">essence</label>
+            <label for="lessence" id="lessence">essence</label>
           </div>
           <div class="optionsF">
-            <input type="radio" id="diesel"  value="diesel"
+            <input type="radio" id="diesel"  value="diesel"  name="fuel" onclick="boiteShowing()"
                    >
-            <label for="diesel">diesel</label>
+            <label for="ldiesel" id="ldiesel">diesel</label>
           </div>
           <div class="optionsF">
-            <input type="radio" id="Electique"  value="Electique"
+            <input type="radio" id="electique"  value="electique" name="fuel" onclick="boiteShowing()"
                    >
-            <label for="Electique">Electique</label>
+            <label for="lElectique" id="lElectique">Electique</label>
           </div>
           <div class="optionsF">
-            <input type="radio" id="Hybride"  value="Hybride"
+            <input type="radio" id="hybride"  value="hybride" name="fuel" onclick="boiteShowing()"
                    >
-            <label for="Hybride">Hybride</label>
+            <label for="lhybride" id="lhybride">Hybride</label>
           </div>
         </div>
     </section>
-    <section class="boxGear">
+    <section class="boxGear" id="boxGear">
  
         <h2>Select your gear box type
         </h2>
         <div class="boxOptions">
 
             <div class="boxOptionsSpecs">
-                <p>manual</p>
+                <p  id="lmanual">manual</p>
                 <img src="images/manualBox.png" alt="#">
-                <input type="radio" id="manual">
+                <input type="radio" id="manual"  name="box" value="manual">
 
 
             </div>
             <div class="boxOptionsSpecs">
-                <p>automatic</p>
+                <p id="lautomatic">automatic</p>
                 <img src="images/automaticBox.png" alt="#">
-                <input type="radio" id="automatic">
+                <input type="radio" value="automatic" id="automatic"  name="box">
                 
             </div>
 
@@ -153,11 +153,11 @@
         </h2>
         <div class="durationOption">
 <label for="duration"> duration</label>
-<input type="number" id="duration"> <br>
+<input type="number" id="durationn" min="1" max="100"> <br>
 
 
         </div>
-<button> Submit</button>
+<button onclick="result()"> Submit</button>
 
     </section>
     <footer>
@@ -196,5 +196,7 @@
         </div>
 
     </footer>
+    <script src="js/script.js"></script> 
+
 </body>
 </html>

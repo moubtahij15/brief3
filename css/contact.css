@@ -378,5 +378,38 @@ line-height: 54px;
 
      }
      /*End footer  */
+     /*start showingInfo  */
+        #showInfo{
+                background-color: #FFFFFF;
+                border-radius: 15px;
+                width: 600px;
+                height: 550px;
+                margin-top: -80%;
+                 margin-left: 50%;
+                margin-right: 50%;
+                position: absolute;
+                text-align: center  ;
+                padding-top: 10%;
+                display: none;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+        }
+     /*end showingInfo  */
+     .infoC{
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        
+
+     }
+     .infoC p {
+
+        margin: 0px;
+        margin-left: 10px;
+     }
+
    
 
