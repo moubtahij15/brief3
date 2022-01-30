@@ -152,6 +152,7 @@ camion:{
 function cc(id){
     
    document.getElementById("fuelOption").style.display = 'block';
+   document.getElementById(id).style.border = '5px solid #022e02';
 
    switch (id) {
     case 'moto':
@@ -332,6 +333,12 @@ break;
 
     //alert(vheicule[type].prix);
 //alert(vheicule.type.carburant[carburan]);
+if(duration<=0){
+    alert("entrer un jour du superieur que 0");
+
+
+} else {
+
 console.log(type+duration+boite+carburan +vheicule[type].carburant.hybride+vheicule[type].carburant.essence);       
  if(carburan.localeCompare("essence")==0 ) {
         result+= vheicule[type].carburant.essence;
@@ -361,6 +368,13 @@ console.log(type+duration+boite+carburan +vheicule[type].carburant.hybride+vheic
   
 location.reload();
    //alert(type+" " +duration+""+boite+"" +carburan);
+}
   
+
+   }
+   //exit info Contact 
+   function exit(){
+
+    document.getElementById("showInfo").style.display = 'none';
 
    }

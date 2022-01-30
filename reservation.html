@@ -12,20 +12,23 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-           <ul class="Logo">
-            <li>  <a href="index.html" id="rentLogo"> Rent<span style="color:green">Me</span>Now </a></li>
-        </ul>           
-           <ul class="linksNav"> 
+        <nav>
+            <ul class="logo">
+           
+            <li><img onclick="afficheMenu()" id ="menuImg" src="images/menu.png" alt="">    </li>        
+             <li> <h1  style="display: none;" onclick="hideMenu()" id="hideMenu">X</h1>  </li>  
+             <li>  <a href="index.html" id="rentLogo"> Rent<span style="color:green">Me</span>Now </a></li>
+            </ul>
+            <ul class="linksNav"> 
           
-            <li>  <a href="index.html"> Accueil </a> </li>
-            <li>  <a href="gallery.html"> Gallery </a> </li>
-            <li>  <a href="reservation.html"> Reservation </a> </li>
-            <li>  <a href="contact.html"> Contact </a> </li>
-            
+                <li >  <a href="index.html"> Accueil </a> </li>
+                <li>  <a href="gallery.html"> Gallery </a> </li>
+                <li>  <a href="reservation.html"> Reservation </a> </li>
+                <li>  <a href="contact.html"> Contact </a> </li>
+               </ul>
 
-           </ul>
         </nav>
+
     </header>
     <section class="cover1">
         
@@ -153,7 +156,7 @@
         </h2>
         <div class="durationOption">
 <label for="duration"> duration</label>
-<input type="number" id="durationn" min="1" max="100"> <br>
+<input type="number" id="durationn" min='1' max="100"> <br>
 
 
         </div>

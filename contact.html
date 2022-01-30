@@ -12,20 +12,23 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-           <ul class="Logo">
-            <li>  <a href="index.html" id="rentLogo"> Rent<span style="color:green">Me</span>Now </a></li>
-        </ul>           
-           <ul class="linksNav"> 
+        <nav>
+            <ul class="logo">
+           
+            <li><img onclick="afficheMenu()" id ="menuImg" src="images/menu.png" alt="">    </li>        
+             <li> <h1  style="display: none;" onclick="hideMenu()" id="hideMenu">X</h1>  </li>  
+             <li>  <a href="index.html" id="rentLogo"> Rent<span style="color:green">Me</span>Now </a></li>
+            </ul>
+            <ul class="linksNav"> 
           
-            <li>  <a href="index.html"> Accueil </a> </li>
-            <li>  <a href="gallery.html"> Gallery </a> </li>
-            <li>  <a href="reservation.html"> Reservation </a> </li>
-            <li>  <a href="contact.html"> Contact </a> </li>
-            
+                <li >  <a href="index.html"> Accueil </a> </li>
+                <li>  <a href="gallery.html"> Gallery </a> </li>
+                <li>  <a href="reservation.html"> Reservation </a> </li>
+                <li>  <a href="contact.html"> Contact </a> </li>
+               </ul>
 
-           </ul>
         </nav>
+
     </header>
 
     <section class="section1">
@@ -95,7 +98,7 @@
         </div>
         <div class="input11">
             <label for="FName">Phone</label>
-            <input type="text" id="phoneI" required>
+            <input type="number" id="phoneI" required>
             
 
 </div>
@@ -130,6 +133,7 @@
   </section>
 
   <div id="showInfo">
+        <h1 id="exit" onclick="exit()">X</h1>
     <div class="infoC">
 
         <label for="nom "> nom :  </label>

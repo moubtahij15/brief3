@@ -6,69 +6,88 @@
     }
     body{
         font-family: "poppins";
+        margin: 0;
+        padding: 0;
     }
-    /* start header*/
-    .menu ul {
-        align-items: center;
-         display: flex;
-        list-style: none;
-        justify-content: space-between;
-        margin-right: 2%;
-        flex-direction: row;
-    
+    nav{
+        width: 100%;
+        height: 20%;
+        padding: 15px 0;
+        display: flex;
     }
-    header{
-
-        padding-left: 119px;
-        padding-right: 119px;
-        
-    }
-    .menu   ul li a{
-        color: black;
-      text-decoration: none;
-      font-size: 18px;
-      margin:0px 10px;
-     
-      font-family: Poppins;
-font-style: normal;
-font-weight: 600;
-font-size: 21px;
-line-height: 31px;
-  
-
-  }
-   nav {
+    nav .logo{
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    flex:2;
+    justify-content: center;
+
+
+    }
+    
+    
+     nav .logo  li a{
+        color: black;
+        text-decoration: none;
+        font-size: 32px;
+        font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+
+    }
+    
+
+    #menuImg{
+        display: none;
+        width: 24px;
+        height: 27px;
+        margin:0 0.5em ;
+
+
+    }
+#hideMenu{
+    position: absolute;
+    left: 5%;
+    top: -1%;
+    
+
+}
+nav .linksNav{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex:5;
+    align-self: center;
     align-items: center;
-    padding-right: 60px;
-  
-   }
-   .linksNav li{
-    padding-left: 30px;
-   
+    justify-content: center;
 
 
-   }
-   #rentLogo {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 51px;
-   }
-/*start Section 1*/
+    }
+    .linksNav li  a{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+    }
+    nav .linksNav li {
+
+        margin: 0 3%;
+    }
+    
 .cover1{
     width: 100%;
-height: 618px;
 background-image:  url("../images/cover.png");
 background-size: cover;
-padding-top: 172px;
-padding-left: 490px;
+height:   600px;
+ padding-top: 10%;
+
 }
 
 
 .cover1 h1 {
+    text-align: center;
+
 width: auto;
 height: auto;
 
@@ -76,22 +95,13 @@ height: auto;
 
 font-style: normal;
 font-weight: bold;
-font-size: 53px;
-line-height: 79px;
+font-size: 50px;
 
 color: #FFFFFF;
 }
-
-
-
-
-/*end Section 1*/
-
-/*start Section vheicule*/
 .vheicule{
-    width: auto;
-   padding-left:119px ;
-padding-right: 140px;
+      width: 100%;
+        padding: 0 20%;
     margin-top: 75px;
 
 }
@@ -99,18 +109,17 @@ padding-right: 140px;
         text-align: center;
         font-style: normal;
         font-weight: 500;
-        font-size: 50px;
+        font-size: 24px;
         line-height: 75px;
         color: #000000;
 
 }
 .vheicule h5 {
     font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 75px;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
 margin: 0%;
-margin-top: 50px;
 
 }
 .cars::-webkit-scrollbar{
@@ -118,61 +127,66 @@ margin-top: 50px;
 
         }
 .cars{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 570px;
-   
-    border-top: 2px solid;
-    padding-top: 100px;
-    overflow-y: hidden;
-flex-wrap: nowrap;
-overflow-x: auto;
+    width: 100%;
+       display: flex;
+       justify-content: space-between;
+       height: 250px;
+       border-top: 2px solid;
+        padding: 2%;
+       overflow-y: hidden;
+       flex-wrap: nowrap;
+       overflow-x: auto;
+       padding-top: 30px;
     
 
 
 }
+/* .car:hover {
+    background-color: gold;
+    width: 55%;
+    margin: 0;
+    
+  } */
     .car{
-        width: 319.55px;
-        height: 400px;
-       
-      flex: 0 0 auto;
-        background: #FFFFFF;
-        border: 1px solid #E5E5E5;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 30px;
-        margin-left: 30px;
+        width: 35%;
+    height:200px ;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-left: 30px;
+    padding-left: 0;
+    padding-top: 22px;
     
     }
     .car h6 {
         
         font-family: Poppins;
-        font-style:italic;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 27px;
-            text-align: center;
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+      text-align: center;
+    color: #ffffff;
+    margin: 5% 2%;
         
 
     }
     .car img {
 
-        width: 255.64px;
-        height: 165.95px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 53px;
+        width: 70px;
+        height:60px;
+       margin: 0 35px;
+       margin-bottom: 28px;
+
     }
     .carInfo{
-        width: 319.55px;
-height: 175.11px;
+        width: 101%;
+    height:83px ;
+    margin-right: 40px;
+    padding-top: 20%;
 background: #064635;
-border: 1px solid #E5E5E5;
-box-sizing: border-box;
-border-radius: 0px 0px 30px 30px;
+border-radius: 0px 0px 25px 25px;
 
     }
     
@@ -180,18 +194,18 @@ border-radius: 0px 0px 30px 30px;
 /*End Section vheicule*/
 /*start Section fuelOption*/
 .fuelOption{
-    width: 753px;
-    height: 240px;
+width: 100%;   
+ height: 240px;
+ padding: 0 30%;
     display: none;
-    margin: auto;
-
+padding-top: 2%;
 
 }
 .fuelOption h2 {
 text-align: center;
     font-style: normal;
 font-weight: 600;
-font-size: 53px;
+font-size: 24px;
 line-height: 79px;
 
 color: #000000;
@@ -201,7 +215,7 @@ color: #000000;
 
     font-style: normal;
 font-weight: 500;
-font-size: 24px;
+font-size: 18px;
 line-height: 36px;
 }
 .optionsFF{
@@ -215,25 +229,24 @@ line-height: 36px;
 
 .boxGear{
 
-    width: 705px;
-height: 389px;
-margin: auto;
+    width: 100%;
+    height: 300px;
+    padding: 0 35%;
 display: none;
 }
 .boxGear h2{
     text-align: center;
     font-style: normal;
 font-weight: 600;
-font-size: 53px;
+font-size: 24px;
 line-height: 79px;
-margin-bottom: 110px;
 color: #000000;
 
 }
 .boxOptions{
-    width: 551px;
-    margin: auto;
-    display: flex;
+    width: 100%;
+   padding: 0 10%;
+   display: flex;
     justify-content: space-between;
 
 }
@@ -245,14 +258,15 @@ flex-direction: column;
 }
 .boxOptionsSpecs p {
     font-style: normal;
+    text-align: center;
 font-weight: 500;
-font-size: 24px;
+font-size: 18px;
 line-height: 36px;
 }
 .boxOptionsSpecs img {
 margin: auto;
-    width: 100px;
-height: 100px;
+    width: 80px;
+height: 80px;
 margin-bottom: 15px;
 }
 
@@ -267,36 +281,40 @@ margin-bottom: 15px;
 /*start Section duration*/
 
 .duration{
-    width: 673px;
-height: 400px;
-margin: auto;
+    width: 100%;
+height: 400px;   
+ padding: 0 35%;
+
 
 }
 .duration h2 {
     text-align: center;
     font-style: normal;
 font-weight: 600;
-font-size: 53px;
+font-size: 24px;
 line-height: 79px;
-margin-bottom: 110px;
 color: #000000;
 
 
 }
 .durationOption{
-   display: block;
+    width: 100%;
+   display: flex;
 align-items: center;
+padding: 0 10%;
+
 }
 .durationOption label{
 
     font-style: normal;
 font-weight: 500;
-font-size: 40px;
+font-size: 24;
 line-height: 60px;
+margin-right: 20px;
 }
 #durationn{
-    width: 430px;
-height: 70px;
+    width: 60%;
+height: 50px;
 
 
 
@@ -306,84 +324,455 @@ box-sizing: border-box;
 border-radius: 10px;
 }
 .duration button {
-    height: 58px;
-    margin: auto;
-    margin-top: 40px;
-    margin-left: 200px;
-    width: 171px;
+    height: 50px;
+    width: 150px;
 background: #064635;
+margin: 0 40%;
 color: white;
-border-radius: 13px;
+border-radius: 10px;
+margin-top: 40px;
+
+}
+footer{
+    padding-left: 5%;
+     margin-top: 20px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ 
+ 
+    }
+    .featFot{
+         margin-left: 8%;
+         border-right:groove;
+         flex: 1;
+ 
+     padding-right: 3%;
+ 
+    }
+    .featFot h6{
+     font-family: Poppins;
+     font-style: normal;
+      font-weight: 200;
+     font-size: 10px;
+     line-height:15px;
+    
+ }
+ 
+    .feaatFot1 {
+         margin: 0; 
+         display: flex;
+         align-items: center;
+    }
+    .feaatFot1 img{
+     width:10%;
+     height: 10%;
+    }
+    .feaatFot1 h6{
+      margin-left: 2%;
+     font-family: Poppins;
+     font-style: normal;
+      font-weight: 300;
+     font-size: 8px;
+     line-height: 9px;
+    }
+    #cars {
+        padding-right: 30px;
+    }
+   
+    #feaatFot0  {
+ 
+     border-right: none;
+ 
+    }
+    #feaatFot0 h6 {
+ 
+     border-right: none;
+ 
+    }
+    #cars h6{
+     width: 90%;
+ 
+    }
+     /* end footer  */
+/*End Section duration*/
+    @media screen and (min-width: 350px) and (max-width: 580px) {
+        /* start header */
+        
+            nav{
+                width: 100%;
+                height: 20%;
+                padding: 0 2%;
+                display: flex;
+                flex-direction: column;
+            }
+            nav .logo{
+            display: flex;
+            list-style: none;
+            flex: 2;
+
+            }
+            nav ul li  a{
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: Poppins;
+              font-style: normal;
+              font-weight: 600;
+            }
+            
+
+            #menuImg{
+                display: block;
+
+                width: 24px;
+                height: 27px;
+                    margin-top: 10px;
+
+            }
+        #hideMenu{
+            position: absolute;
+            left: 30%;
+            top: 0.5%;
+            
+
+        }
+        nav .linksNav{
+             display: none;
+            list-style: none;
+            margin:0 0.5em ;
+
+            }
+    
+/* end header */
+/*start Section 1*/
+.cover1{
+    width: 100%;
+background-image:  url("../images/cover.png");
+background-size: cover;
+height:   200px;
+ padding-top: 10%;
+
+}
+
+
+.cover1 h1 {
+    text-align: center;
+
+width: auto;
+height: auto;
+
+
+
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+
+color: #FFFFFF;
+}
+.vheicule{
+      width: 100%;
+      padding: 0 5%;
+
+    margin-top: 75px;
+
+}
+.vheicule h2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 75px;
+        color: #000000;
+
+}
+.vheicule h5 {
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+margin: 0%;
+
+}
+.cars::-webkit-scrollbar{
+            width: 0;
+
+        }
+.cars{
+    width: 100%;
+       display: flex;
+       justify-content: space-between;
+       height: 250px;
+       border-top: 2px solid;
+        padding: 2%;
+       overflow-y: hidden;
+       flex-wrap: nowrap;
+       overflow-x: auto;
+       padding-top: 30px;
+    
+
+
+}
+    .car{
+        width: 35%;
+    height:200px ;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-left: 30px;
+    padding-left: 0;
+    padding-top: 22px;
+    
+    }
+    .car h6 {
+        
+        font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+      text-align: center;
+    color: #ffffff;
+    margin: 5% 2%;
+        
+
+    }
+    .car img {
+
+        width: 70px;
+        height:60px;
+       margin: 0 35px;
+       margin-bottom: 28px;
+
+    }
+    .carInfo{
+        width: 100%;
+    height:83px ;
+    margin-right: 40px;
+    padding-top: 20%;
+background: #064635;
+border-radius: 0px 0px 25px 25px;
+
+    }
+    
+
+/*End Section vheicule*/
+/*start Section fuelOption*/
+.fuelOption{
+width: 100%;   
+ height: 240px;
+ padding: 0 6%;
+ display: none;
+
+padding-top: 7%;
+
+}
+.fuelOption h2 {
+text-align: center;
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 79px;
+
+color: #000000;
+
+}
+.optionsF label{
+
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+}
+.optionsFF{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*End Section fuelOption*/
+/*start Section boxGear*/
+
+.boxGear{
+
+    width: 100%;
+    height: 300px;
+    padding: 0 6%;
+display: none;
+}
+.boxGear h2{
+    text-align: center;
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 79px;
+color: #000000;
+
+}
+.boxOptions{
+    width: 100%;
+   padding: 0 10%;
+   display: flex;
+    justify-content: space-between;
+
+}
+
+.boxOptionsSpecs {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.boxOptionsSpecs p {
+    font-style: normal;
+    text-align: center;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+}
+.boxOptionsSpecs img {
+margin: auto;
+    width: 80px;
+height: 80px;
+margin-bottom: 15px;
+}
+
+#manual{
+    margin: auto;
+}
+#automatic{
+    margin: auto;
+}
+/*End Section boxGear*/
+
+/*start Section duration*/
+
+.duration{
+    width: 100%;
+height: 400px;   
+ padding: 0 6%;
+
+
+}
+.duration h2 {
+    text-align: center;
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 79px;
+color: #000000;
+
+
+}
+.durationOption{
+    width: 100%;
+   display: flex;
+align-items: center;
+padding: 0 10%;
+
+}
+.durationOption label{
+
+    font-style: normal;
+font-weight: 500;
+font-size: 24;
+line-height: 60px;
+margin-right: 20px;
+}
+#durationn{
+    width: 60%;
+height: 50px;
+
+
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+}
+.duration button {
+    height: 40px;
+    width: 100px;
+background: #064635;
+margin: 0 40%;
+color: white;
+border-radius: 10px;
+margin-top: 40px;
+
 }
 /*End Section duration*/
 
-/* Start footer*/
-footer{
-    width: 1311px;
-height: 274px;
-margin-left: 160px;
-margin-top: 229px;
-margin-right: 42px;
-margin-bottom: 20px;
-display: flex;
-justify-content: space-around;
+ /* start footer  */
+               
+ footer{
+    margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+ }
+ .featFot{
+      margin-left: 8%;
+      border-right:groove;
+      flex: 1;
+
+  padding-right: 3%;
+
+ }
+ .featFot h2{
+  font-family: Poppins;
+  font-style: normal;
+   font-weight: bold;
+  font-size: 14px;
+  line-height:15px;
+  height: 30px;
+
+ }
+ .featFot h6{
+  font-family: Poppins;
+  font-style: normal;
+   font-weight: 200;
+  font-size: 10px;
+  line-height:15px;
+ 
 }
 
-
-.featFot{
-
-font-style: normal;
-font-weight: 300;
-font-size: 13px;
-line-height: 19px;
-border-right:3px solid  #064635;
-
-}
-.feaatFot1{
- display: flex;
+ .feaatFot1 {
+      margin: 0; 
+      display: flex;
+      align-items: center;
+ }
+ .feaatFot1 img{
+  width:10%;
+  height: 10%;
+ }
+ .feaatFot1 h6{
+   margin-left: 2%;
+  font-family: Poppins;
+  font-style: normal;
+   font-weight: 300;
+  font-size: 8px;
+  line-height: 9px;
+ }
+ #cars {
+     padding-right: 30px;
  }
 
-.feaatFot1 img{
+ #feaatFot0  {
 
-margin-top: 47px;
+  border-right: none;
 
-width: 32px;
-height:21px;  
-margin-right: 30px;
+ }
+ #feaatFot0 h6 {
 
+  border-right: none;
 
-}
-footer h6{
+ }
+ #cars h6{
+  width: 90%;
 
-width: 338px;
-height: 20px;
+ }
+/* end footer  */
+/*end Section 1*/
 
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 300;
-font-size: 13px;
-line-height: 54px;
-
-}
-#feaatFot0{
-
-border-right: none;
-
-}
-/*End footer  */
-
-
-input[type="radio" i] {
-    background-color: initial;
-    cursor: default;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 0px 5px;
-    padding: initial;
-    border: initial;
-    width: 30px;
-    height: 30px;
-}
-
+        }
