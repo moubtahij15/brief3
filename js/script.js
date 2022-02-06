@@ -1,19 +1,49 @@
 //menuAfficher
 
-function afficheMenu(){
+// function afficheMenu(){
  
-    document.querySelector(".linksNav").style.display="block" ;  
-    document.getElementById("hideMenu").style.display="block"
-    document.getElementById("menuImg").style.display="none"
+//     document.querySelector(".linksNav").style.display="block" ;  
 
-}
-function hideMenu(){
+
+//     document.getElementById("hideMenu").style.display="block";
+//     document.getElementById("menuImg").style.display="none";
+
+// }
+// function hideMenu(){
  
-    document.querySelector(".linksNav").style.display="none" ;  
-    document.getElementById("hideMenu").style.display="none"
-    document.getElementById("menuImg").style.display="block"
+//     document.querySelector(".linksNav").style.display="none" ;  
+//     document.getElementById("hideMenu").style.display="none";
+//     document.getElementById("menuImg").style.display="block";
 
-}
+// }
+ var show_menu=document.querySelector('.menuImg');
+show_menu.addEventListener('click', e => {
+
+    document.querySelector(".linksNav1").style.display="block" ;  
+document.getElementById("hideMenu").style.display="block";
+        document.getElementById("menuImg").style.display="none";
+    //    e.cancelable
+
+        // e.preventDefault();
+        // location.reload();
+
+
+
+    })
+        //hide
+        document.querySelector('.hideMenu').addEventListener('click', e => {
+   
+            document.querySelector(".linksNav1").style.display="none" ;  
+
+
+document.getElementById("hideMenu").style.display="none";
+    document.getElementById("menuImg").style.display="block";
+    // e.preventDefault();
+    // e.cancelable
+
+    // location.reload();
+
+})
 
 //contact
 
@@ -310,7 +340,7 @@ break;
      
         boite=vheicule[type].boite.automatic;
         
-
+                                
 
     } else {
         document.getElementById("boxGear").style.display="block";

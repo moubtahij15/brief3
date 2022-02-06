@@ -10,11 +10,24 @@
         padding: 0;
     }
     nav{
-        width: 100%;
+       
+
+    }
+     .barMobile{
+
+        display: none;
+    }
+    .desktop{
+        display: flex;
+         width: 100%;
         height: 20%;
         padding: 15px 0;
         display: flex;
+        flex-direction: row;
     }
+             
+
+
     nav .logo{
     display: flex;
     list-style: none;
@@ -36,21 +49,7 @@
     }
     
 
-    #menuImg{
-        display: none;
-        width: 24px;
-        height: 27px;
-        margin:0 0.5em ;
-
-
-    }
-#hideMenu{
-    position: absolute;
-    left: 5%;
-    top: -1%;
     
-
-}
 nav .linksNav{
     list-style: none;
     margin: 0;
@@ -159,6 +158,8 @@ nav .linksNav{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 0 3%;
+    margin-right: 20px;
+
 
 }
     .first img{
@@ -394,50 +395,77 @@ margin-top: 20px;
 
         @media screen and (min-width: 350px) and (max-width: 580px) {
             /* start header */
-            
+                
                 nav{
                     width: 100%;
                     height: 20%;
                     padding: 0 2%;
+                    
                     display: flex;
                     flex-direction: column;
                 }
-                nav .logo{
+               .barMobile{
+
+                    display: block;
+                }
+                .desktop{
+                    display: none;
+                }
+
+                nav .logo1{
                 display: flex;
                 list-style: none;
                 flex: 2;
+                justify-content: flex-start;
 
                 }
                 nav ul li  a{
                     color: black;
                     text-decoration: none;
-                    font-size: 18px;
+                    font-size: 24px;
                     font-family: Poppins;
                   font-style: normal;
                   font-weight: 600;
+                }
+                #rentLogo{
+                    font-size: 24px;
+
                 }
                 
 
                 #menuImg{
                     display: block;
-
                     width: 24px;
                     height: 27px;
-                        margin-top: 10px;
+                    margin-top: 5px;
+                    margin-right: 10px;
 
                 }
             #hideMenu{
+                display: none;
                 position: absolute;
-                left: 30%;
-                top: 0.5%;
-                
+                left: 5%;
+                top: -0.5%;
 
             }
-            nav .linksNav{
-                 display: none;
+            nav .linksNav1{
+                display: none;
                 list-style: none;
                 margin:0 0.5em ;
-
+                align-self: flex-start;
+                
+                }
+                .linksNav1 li  a{
+                    color: black;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-family: Poppins;
+                  font-style: normal;
+                  font-weight: 600;
+                }
+                nav .linksNav li {
+            
+                    margin: 0 3%;
                 }
         
 /* end header */
@@ -498,7 +526,8 @@ margin-top: 20px;
                 display: flex;
                 flex-direction: column;
                 padding-top: 40px;
-                align-items: center;                
+                align-items: center;   
+                             
 
             }
             .first{
@@ -508,6 +537,8 @@ margin-top: 20px;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 20px;
                 padding: 0 3%;
+                margin-right: 0px;
+
 
             }
                 .first img{
@@ -674,6 +705,7 @@ margin-top: 20px;
                         flex: 1;
                 
                     padding-right: 3%;
+                    
                 
                    }
                    .featFot h2{
@@ -683,6 +715,7 @@ margin-top: 20px;
                     font-size: 14px;
                     line-height:15px;
                     height: 30px;
+                    
 
                    }
                    .featFot h6{
@@ -695,6 +728,8 @@ margin-top: 20px;
                 }
                 
                    .feaatFot1 {
+                    padding-right: 10px;
+
                         margin: 0; 
                         display: flex;
                         align-items: center;
