@@ -3,6 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
+    
     }
     body{
         font-family: "poppins";
@@ -473,7 +474,7 @@ footer{
 /* end header */
 /*start Section 1*/
 .cover1{
-    width: 102%;
+    width: 105%;
 background-image:  url("../images/cover.png");
 background-size: cover;
 height:   200px;

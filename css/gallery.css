@@ -4,6 +4,7 @@
     
     box-sizing: border-box;
     
+    
     }
     body{
         font-family: "poppins";
@@ -553,7 +554,7 @@ color: #FFFFFF;
 /* end header */
 /* start section1 */
             .cover1 {
-                width: 100%;
+                width: 105%;
                 background-image:  url("../images/cover.png");
                     background-color: #E5E5E5;
                     background-size: cover;
@@ -645,8 +646,9 @@ margin: 0%;
 .car img {
 
     width: 70px;
+    /* background-color: #064635; */
     height:60px;
-   margin: 0 35px;
+   margin: 0 20%;
 }
 .carInfo{
     
@@ -721,7 +723,7 @@ margin: 0;
     font-family: Poppins;
 font-style: normal;
 font-weight: 500;
-font-size: 7px;
+font-size: 6px;
 line-height: 15px;
 margin: 0;
 
