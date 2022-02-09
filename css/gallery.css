@@ -10,7 +10,8 @@
         font-family: "poppins";
         margin:0px;
         padding:0px;
-        width:100%;
+        width: 100%;
+
         
 
         
@@ -476,7 +477,12 @@ color: #FFFFFF;
     /* end footer  */
 
 /* end header */
-    @media screen and (min-width: 350px) and (max-width: 580px) {
+    @media screen and (max-width: 680px) {
+        body{
+
+            width: 100vh;
+
+        }
         /* start header */
         
         nav{
@@ -619,7 +625,7 @@ margin: 0%;
 
    }
    .car{
-    width: 35%;
+    width: 25%;
     height:200px ;
  
     background: #FFFFFF;
